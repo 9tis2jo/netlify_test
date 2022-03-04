@@ -2545,15 +2545,7 @@ img {
 	width: 100%;
     height: 100%;
     padding: 0.5rem 0px;
-}  
-#cart-view .sub-title-1 .sub-title-1-1-1 .sub-main .sub-main-1 .sub-main-1-4 .sub-main-1-4-1 .sub-main-1-4-1-1 .sub-main-1-4-1-1-1 button{
-    width: 100%;
-    height: 100%;
-    padding: 0px 1.5rem;
-    background-color: transparent;
-    cursor: pointer;
-    outline: none;
-}  
+}   
 
 #cart-view .sub-title-1 .sub-title-1-1-1 .sub-main .sub-main-1 .sub-main-1-4 .sub-main-1-4-1 .sub-main-1-4-1-1 .sub-main-1-4-1-1-1 .sub-main-1-4-1-1-1-1{
 	display: flex;
@@ -2562,7 +2554,19 @@ img {
     -webkit-box-align: center;
     align-items: center;
 }
-
+#cart-view .sub-title-1 .sub-title-1-1-1 .sub-main .sub-main-1 .sub-main-1-4 .sub-main-1-4-1 .sub-main-1-4-1-1 .sub-main-1-4-1-1-1 .sub-main-1-4-1-1-1-1 button{
+    width: 100%;
+    height: 100%;
+    padding: 0px 1.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    outline: 0;
+    border:0;
+    color: black;
+} 
+#cart-view .sub-title-1 .sub-title-1-1-1 .sub-main .sub-main-1 .sub-main-1-4 .sub-main-1-4-1 .sub-main-1-4-1-1 .sub-main-1-4-1-1-1 .sub-main-1-4-1-1-1-1 button:hover{
+    color: #611122da;
+} 
 #cart-view .sub-title-1 .sub-title-1-1-1 .sub-main .sub-main-1 .sub-main-1-4 .sub-main-1-4-1 .sub-main-1-4-1-2 {
 	border-left: 1px solid rgb(220, 219, 228);
 	width: 284px;
