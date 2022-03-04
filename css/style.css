@@ -2441,7 +2441,7 @@ img {
 }
 #cart-view .sub-menu-1 .sub-menu-1-1 .sub-menu-1-1-1 {
   display: inline-block;
-  float: left;
+  float: right;
   margin: 0;
   text-align: center;
   width: 150px;
@@ -2455,12 +2455,9 @@ img {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-}
-#cart-view .sub-menu-1 .sub-menu-1-1 .sub-menu-1-1-1 a {
-  padding:10px
+   padding:10px
   background-color: #fff;
 }
-
 
 #cart-view .sub-title-1 .sub-title-1-1-1 h2{
 	padding: 70px 0 30px 40px;
