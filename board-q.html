@@ -223,6 +223,7 @@
                 <div class="aa-blog-content">
                   <div class="row">
                     <div class="tab-content">
+
                       <!-- Start men product category -->
                       <div class="tab-pane fade in active" id="notice">
                         <h4 style= "border-bottom:1px solid #ccc; padding-bottom: 5px"  >1:1 문의게시판</h4>
@@ -273,16 +274,36 @@
                               <td>2022-03-03</td>
                               <td>1231</td>
                           </tr>
-                      </table>
-                      <button class="aa-browse-btn" style="float: right; margin-top: 25px; margin-right: 88px; "><a href="insertboard.html" style="color: #fff">글쓰기</a></button>  
+                        </table>
+                        <button class="aa-browse-btn" style="float: right; margin-top: 25px; margin-right: 88px; "><a href="insertboard.html" style="color: #fff">글쓰기</a></button>
+                      
+                        <!-- search menu -->
+
+                        <form aciton="getBoardList.do" method="post">
+                          <div class="aa-blog-archive-pagination">
+                            <nav>
+                              <table style="margin: 0 auto;">
+                                <tr>
+                                  <td>
+                                    <select name="searchCondition">
+                                      <!-- <option value="TITLE">제목
+                                      <option value="CONTENT">내용 -->
+                                      <c:forEach items="${conditionMap }" var="option">
+                                        <option value="제목">제목
+                                        <option value="내용">내용
+                                      </c:forEach>
+                                    </select>
+                                    <input name="searchKeyword" type="text" />
+                                    <input type="submit" value="검색" />
+                                  </td>
+                                </tr>
+                              </table>
+                            </nav>
+                          </div>
+                        </form>  
                       </div>
-                    
                     </div>
-
-
-
-
-                </div>
+                  </div>
                 </div>
                 <!-- Blog Pagination -->
                 <div class="aa-blog-archive-pagination">

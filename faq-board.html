@@ -210,15 +210,11 @@
 
   <!-- Blog Archive -->
   <section id="aa-blog-archive">
-
     <div class="container">
-
       <div class="row">
         <div class="col-md-12">
           <div class="aa-blog-archive-area">
-            
             <div class="row">
-<!-- 여기 그냥 복붙 하세요 557까지-->
               <div class="col-md-9">
                 <div class="aa-blog-content">
                   <div class="row">
@@ -274,7 +270,31 @@
                               <td>1231</td>
                           </tr>
                       </table>
-                      <button class="aa-browse-btn" style="float: right; margin-top: 25px; margin-right: 88px; "><a href="insertboard.html" style="color: #fff">글쓰기</a></button>  
+                      <button class="aa-browse-btn" style="float: right; margin-top: 25px; margin-right: 88px; "><a href="insertboard.html" style="color: #fff">글쓰기</a></button>
+                        <!-- search menu -->
+
+                        <form aciton="getBoardList.do" method="post">
+                          <div class="aa-blog-archive-pagination">
+                            <nav>
+                              <table style="margin: 0 auto;">
+                                <tr>
+                                  <td>
+                                    <select name="searchCondition">
+                                      <!-- <option value="TITLE">제목
+                                      <option value="CONTENT">내용 -->
+                                      <c:forEach items="${conditionMap }" var="option">
+                                        <option value="제목">제목
+                                        <option value="내용">내용
+                                      </c:forEach>
+                                    </select>
+                                    <input name="searchKeyword" type="text" />
+                                    <input type="submit" value="검색" />
+                                  </td>
+                                </tr>
+                              </table>
+                            </nav>
+                          </div>
+                        </form>  
                       </div>
                     
                     </div>
@@ -282,7 +302,7 @@
 
 
 
-                </div>
+                  </div>
                 </div>
                 <!-- Blog Pagination -->
                 <div class="aa-blog-archive-pagination">
